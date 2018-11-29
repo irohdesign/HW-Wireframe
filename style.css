@@ -1,9 +1,15 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
 body {
     font-family: 'arial', 'helvetica neue', helvetica, sans-serif;
     color: #777;
     background: #777;
-    width: 100%;
+    width: 960px;
     font-size: 18px;
+    margin: 0px auto;
 }
 
 header, nav, section, aside, footer {
@@ -14,9 +20,8 @@ header, nav, section, aside, footer {
 /* header */
 
 header, nav {
-    padding: 50px;
-    width: 80%;
-    margin: 20px auto;
+    padding: 30px;
+    margin: 10px auto;
 }
 
 /* nav */
@@ -25,9 +30,24 @@ nav {
     
 }
 
-/* aside */
-
 /* section */
+
+.container {
+    width: 960px;
+    position: relative;
+    min-height: 320px;
+}
+
+section, aside {
+    height: 300px;
+}
+
+section {
+    float: left;
+    width: 59%;
+    padding: 50px 30px;
+}
+
 h1, p {
     color: #777;
     background: #ebebeb;
@@ -36,8 +56,29 @@ h1, p {
 article {
     color: #ebebeb;
     background: #777;
+    padding: 30px;
+    margin-top: 20px;
 }
 
-section {
-    width: 495px;
+article h1, article p {
+    margin: 10px auto;
+    padding: 10px;
+}
+
+/* aside */
+
+aside {
+    position: absolute;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
 }
